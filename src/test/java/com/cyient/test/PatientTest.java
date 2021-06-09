@@ -33,11 +33,11 @@ public class PatientTest  extends WebDriverWrapper {
 
 		//SearchOrAddPatientPage
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@name='pat']")));
-		driver.findElement(By.id("form_fname")).sendKeys("bala");
-		driver.findElement(By.id("form_lname")).sendKeys("dina");
-		driver.findElement(By.id("form_DOB")).sendKeys("2021-06-07");
+		driver.findElement(By.id("form_fname")).sendKeys("Rak");
+		driver.findElement(By.id("form_lname")).sendKeys("Dhu");
+		driver.findElement(By.id("form_DOB")).sendKeys("2021-07-06");
 		Select selectGender = new Select(driver.findElement(By.id("form_sex")));
-		selectGender.selectByVisibleText("Male");
+		selectGender.selectByVisibleText("Female");
 		driver.findElement(By.id("create")).click();
 		driver.switchTo().defaultContent();
 
@@ -70,4 +70,4 @@ public class PatientTest  extends WebDriverWrapper {
 
 }
 
-}
+
