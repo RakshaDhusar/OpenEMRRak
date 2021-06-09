@@ -35,7 +35,7 @@ public class PatientTest  extends WebDriverWrapper {
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@name='pat']")));
 		driver.findElement(By.id("form_fname")).sendKeys("Rak");
 		driver.findElement(By.id("form_lname")).sendKeys("Dhu");
-		driver.findElement(By.id("form_DOB")).sendKeys("2021-07-06");
+		driver.findElement(By.id("form_DOB")).sendKeys("1995-06-07");
 		Select selectGender = new Select(driver.findElement(By.id("form_sex")));
 		selectGender.selectByVisibleText("Female");
 		driver.findElement(By.id("create")).click();
